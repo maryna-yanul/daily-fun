@@ -7,25 +7,9 @@
 daily-fun
 <script type="text/javascript">
 var palindrome = function(str){
- 	var res = str.split('');
-	if(res.length % 2 === 0){
-		if(str.substr(0, str.length/2) == str.substr(str.length/2).split("").reverse().join('')){
-			console.log('palindrome');
-		}else{
-			console.log('not palindrome!');
-		}
-
-		 // console.log(res[str.length/2-1] == res[str.length/2]);
-		 // if(res[str.length/2-1] == res[str.length/2]){
-		 // 	if(res[str.length/2-2] == res[str.length/2+1]){
-		 // 		console.log('palindrome');
-		 // 	}
-		 // }
-	}else{
-		console.log('not palindrome!');
-	}
+	return str.substr(0, str.length/2) == str.substr(str.length/2).split("").reverse().join('');
 }
-palindrome('tyyuut');
+console.log(palindrome('tyyt'));
 </script>
 </body>
 </html>
