@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>daily-fun</title>
+</head>
+<body>
+daily-fun
+<script type="text/javascript">
+var palindrome = function(str){
+ 	var res = str.split('');
+	if(res.length % 2 === 0){
+		 console.log(res[str.length/2-1] == res[str.length/2]);
+		 	if(res[str.length/2-1] == res[str.length/2]){
+		 		if(res[str.length/2-2] == res[str.length/2+1]){
+		 			console.log('palindrome');
+		 		}
+		 	}
+	}else{
+		 console.log("not palindrome!");
+	}
+}
+palindrome('tyyt');
+</script>
+</body>
+</html>
