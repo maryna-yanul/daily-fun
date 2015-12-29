@@ -14,10 +14,13 @@ console.log(palindrome('tyyt'));
 
 var palindrome1 = function(str){
 	for (var i = 0; i < str.length/2; i++) {
-		return str.substr(str.length+i) == str.substr(str.length-i);
-	};
+		console.log(str.charAt(i));
+		console.log(str.charAt(str.length-i));
+		str.charAt(i) == str.charAt(str.length-i);
+	}
+	return 
 }
-console.log(palindrome1('tyyti'));
+console.log(palindrome1('yooy'));
 
 </script>
 </body>
