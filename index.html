@@ -10,6 +10,15 @@ var palindrome = function(str){
 	return str.substr(0, str.length/2) == str.substr(str.length/2).split("").reverse().join('');
 }
 console.log(palindrome('tyyt'));
+
+
+var palindrome1 = function(str){
+	for (var i = 0; i < str.length/2; i++) {
+		return str.substr(str.length+i) == str.substr(str.length-i);
+	};
+}
+console.log(palindrome1('tyyti'));
+
 </script>
 </body>
 </html>
